@@ -1,3 +1,4 @@
+/* css for all pages */
 body {
   font-family: 'Montserrat';
   display: flex;
@@ -5,8 +6,6 @@ body {
   max-height: 100vh;
   margin: 0;
 }
-
-/*                         HEADING             */
 
 header {
   display: flex;
@@ -16,11 +15,6 @@ header {
   margin-left: 3.5vw;
   margin-right: 3.5vw;
   z-index: 1;
-}
-
-/* add 50 vw to the home left*/
-header a:nth-child(2) {
-  margin-right: 3em;
 }
 
 a {
@@ -33,11 +27,28 @@ a:hover {
   border-bottom: 2px solid black;
 }
 
-header,
-a {
+header, a {
   font-weight: 800;
   font-kerning: normal;
 }
+
+/*                for homepage                      */
+
+/* add 50 vw to the home left*/
+header a:nth-child(2) {
+  margin-right: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 ul {
   list-style-type: none;
@@ -55,7 +66,7 @@ main {
   position: absolute;
 }
 
-h2{
+h2 {
   font-size: 2.1em;
 }
 
@@ -80,14 +91,10 @@ h1 {
   font-weight: bolder;
 }
 
-h1 a, a:hover {
+h1 a,
+a:hover {
   color: black;
   border: none;
-}
-
-.top-nav, a:link,
-a:visited {
-  color: black;
 }
 
 .about-skills {
@@ -122,7 +129,8 @@ footer img:hover {
 
 .current[aria-current="page"] {
   text-decoration: underline wavy #f8c348 0.15rem;
-  text-underline-offset: 0.5rem;}
+  text-underline-offset: 0.5rem;
+}
 
 /*                     HAMBURGER                        */
 
@@ -212,6 +220,12 @@ footer img:hover {
     padding-left: 13vw; */
   }
 
+  .top-nav,
+  a:link,
+  a:visited {
+    color: #999;
+  }
+
   a {
     color: #999;
   }
@@ -234,6 +248,7 @@ footer img:hover {
   h3 {
     white-space: nowrap;
   }
+
   p {
     /* white-space: pre; */
     font-size: 1.3em;
@@ -267,10 +282,10 @@ footer img:hover {
 
   .skills-ul-wrapper ul {
     padding-left: 0px;
-    
+
   }
 
-  .skills-ul-wrapper ul li{
+  .skills-ul-wrapper ul li {
     margin-bottom: 1em;
     font-size: 0.8EM;
     color: rgb(117, 117, 117);
@@ -308,7 +323,9 @@ footer img:hover {
     margin-right: 16vw;
   }
 
-  .text-wrapper, #b, #c {
+  .text-wrapper,
+  #b,
+  #c {
     display: flex;
     flex-direction: column;
     margin-top: 3em;
@@ -317,7 +334,7 @@ footer img:hover {
   #c {
     margin-left: 15vw;
   }
-  
+
   .swapper {
     display: flex;
     flex-direction: column-reverse;
@@ -357,7 +374,8 @@ footer img:hover {
     margin-right: 1em;
   }
 
-  .top-nav, a:link,
+  .top-nav,
+  a:link,
   a:visited {
     color: #999;
   }
@@ -369,7 +387,7 @@ footer img:hover {
 
   .skills-ul-wrapper li {
     margin-bottom: 1em;
-    font-size: 0.8em ;
+    font-size: 0.8em;
   }
 
 }
@@ -391,7 +409,7 @@ footer img:hover {
     display: none;
   }
 
-  .text-wrapper h2{
+  .text-wrapper h2 {
     font-size: 1.5em;
     margin-bottom: 0em;
   }
@@ -456,10 +474,12 @@ footer img:hover {
     margin-right: 5vw;
   }
 
-  .skills-ul-wrapper {
+  #c {
     margin-left: 5vw;
-    margin-right: 5vw;
+    padding-bottom: 10vh;
   }
+
+
 
   img {
     width: 90vw;
