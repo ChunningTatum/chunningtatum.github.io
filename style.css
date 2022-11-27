@@ -223,6 +223,10 @@ footer img:hover {
     width: 50vw;
   }
 
+  .home .text-wrapper {
+    margin-right: 15vw;
+  }
+
   h2 {
     white-space: nowrap;
   }
@@ -279,7 +283,7 @@ footer img:hover {
   }
 
   section img {
-    max-width: 30vw;
+    max-width: 25vw;
     min-width: 20vw;
     margin-right: 3em;
     cursor: pointer;
@@ -299,9 +303,19 @@ footer img:hover {
     align-items: center;
   }
 
+  .text-wrapper {
+    margin-left: 16vw;
+    margin-right: 16vw;
+  }
+
   .text-wrapper, #b, #c {
-    margin: 0 3.5vw 5vh  ;
-    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+  }
+
+  #c {
+    margin-left: 15vw;
   }
   
   .swapper {
@@ -311,7 +325,7 @@ footer img:hover {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin: 0;
     margin-top: 6em;
   }
@@ -350,6 +364,7 @@ footer img:hover {
 
   .skills-ul-wrapper {
     margin-bottom: 10em;
+    padding-left: 0px;
   }
 
   .skills-ul-wrapper li {
@@ -436,16 +451,22 @@ footer img:hover {
     white-space: wrap;
   }
 
+  .text-wrapper {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .skills-ul-wrapper {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
   img {
     width: 90vw;
   }
 
   footer {
     display: none;
-  }
-
-  p{
-    margin-left: 3.5vw;
   }
 
 }
