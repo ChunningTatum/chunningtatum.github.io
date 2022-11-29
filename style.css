@@ -3,8 +3,12 @@ body {
   font-family: 'Montserrat';
   display: flex;
   flex-direction: column;
-  max-height: 100vh;
   margin: 0;
+}
+
+.home, .about {
+  max-height: 100vh;
+  z-index: 0;
 }
 
 header {
@@ -81,7 +85,7 @@ h1 {
   font-weight: bolder;
 }
 
-h1 a a:hover {
+h1 a:hover {
   color: black;
   border: none;
 }
@@ -259,22 +263,54 @@ footer img:hover {
 
   .portfolio {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    margin-top: 8vh;
-
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 5vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
   }
 
-  .portfolio section{
+  .section-wrapper section {
     display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
+  }
+
+  .content-wrapper {
+    max-width: 33.33%;
+    margin: 0 0.5rem;
+  }
+
+  .content-wrapper h3{
+    color: black;
+    font-weight: 700;
+    font-size: 1em;
+  }
+
+  .content-wrapper span{
+    color: black;
+    margin-right: 1em;
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+
+  .title-wrapper { 
+    margin-top: 1em;
+    margin-bottom: 4em;
+    white-space: wrap;
+
   }
 
   .portfolio img {
+    max-width: 25%;
     margin-right: 0vw;
+    vertical-align: middle;
+  }
+
+  .heading-wrapper h2{
+    margin-left: 1rem;
   }
 
   .swapper {
@@ -288,7 +324,7 @@ footer img:hover {
     justify-content: space-between;
   }
 
-  .about img {
+  .about section img {
     min-width: 20em;
     max-width: 25vw;
     cursor: default;
@@ -325,9 +361,10 @@ footer img:hover {
 
   footer {
     padding: 6.5vh 3.5vw 5.4vh;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 0px;
   }
+
 }
 
 @media (max-width: 1023px) {
@@ -335,6 +372,11 @@ footer img:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .portfolio section{
+    display: flex;
+    flex-direction: column;
   }
 
   .text-wrapper {
