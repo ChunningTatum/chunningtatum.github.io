@@ -3,12 +3,12 @@ body {
   font-family: 'Montserrat';
   display: flex;
   flex-direction: column;
+  z-index: 0;
   margin: 0;
 }
 
 .home, .about {
   max-height: 100vh;
-  z-index: 0;
 }
 
 header {
@@ -220,7 +220,6 @@ footer img:hover {
     display: flex;
     align-items: center;
     overflow-x: hidden;
-    z-index: -1;
     /* padding-right: 10vh;
     padding-left: 13vw; */
   }
@@ -267,19 +266,37 @@ footer img:hover {
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 5vh;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin: 0 15vw;
   }
 
-  .section-wrapper section {
+  .portfolio img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .section-wrapper {
     display: flex;
     justify-content: flex-start;
-
+    justify-content: center;
     flex-wrap: wrap;
+    margin-left: 0.5rem;
+  }
+
+  .section-wrapper a {
+    display: block;
+  }
+
+  main a:hover {
+    border: none;
+  }
+
+  article {
+    width: 20vw;
+    max-width: 33.33%;
+
   }
 
   .content-wrapper {
-    max-width: 33.33%;
     margin: 0 0.5rem;
   }
 
@@ -290,7 +307,7 @@ footer img:hover {
   }
 
   .content-wrapper span{
-    color: black;
+    color: rgba(0, 0, 0, 0.70);;
     margin-right: 1em;
     font-size: 0.8em;
     font-weight: 300;
@@ -300,12 +317,9 @@ footer img:hover {
     margin-top: 1em;
     margin-bottom: 4em;
     white-space: wrap;
-
   }
 
   .portfolio img {
-    max-width: 25%;
-    margin-right: 0vw;
     vertical-align: middle;
   }
 
@@ -363,6 +377,10 @@ footer img:hover {
     padding: 6.5vh 3.5vw 5.4vh;
     position: fixed;
     bottom: 0px;
+  } 
+
+  footer a:hover {
+    border: none;
   }
 
 }
