@@ -496,7 +496,11 @@ footer img:hover {
     margin-bottom: 0;
   }
 
-  #c {
+  .about #c {
+    margin-left: 15vw;
+  }
+
+  .portfolio-item #c {
     margin-left: 0;
     max-width: 100%;
   }
