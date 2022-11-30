@@ -248,10 +248,8 @@ footer img:hover {
   .text-wrapper {
     margin-left: 25vh;
     font-weight: 100;
-    line-height: 1.8rem;
     width: 40vw;
     margin-right: 10em;
-
   }
 
   .home .text-wrapper {
@@ -448,6 +446,24 @@ footer img:hover {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin-top: 5em;
+  }
+
+  .swapper h2 {
+    margin-top: 0;
+  }
+
+  .swapper img {
+    margin-bottom: 0;
+  }
+
+  #c {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .text-wrapper h3 {
+    margin-top: 0;
   }
 
   h1 a {
@@ -462,6 +478,11 @@ footer img:hover {
     font-size: 1.5em;
     margin: 0;
     margin-top: 5em;
+  }
+
+  .portfolio h2 {
+    font-size: 2em;
+    font-weight: 200;
   }
 
   .title-wrapper {
@@ -483,8 +504,8 @@ footer img:hover {
 
   .about img {
     width: 60vw;
-    margin-top: 10em;
-    margin-bottom: 0em;
+    margin-top: 5em;
+    margin-bottom: 1em;
   }
 
   footer {
@@ -631,6 +652,10 @@ footer img:hover {
 
     .section-wrapper {
       margin: 0 5vw;
+    }
+
+    #c {
+      margin-left: 0;
     }
 
     img {
