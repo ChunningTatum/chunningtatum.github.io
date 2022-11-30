@@ -34,7 +34,7 @@ a:hover {
 
 header
 a {
-  font-weight: 800;
+  font-weight: lighter;
   font-kerning: normal;
   color: #999;
 }
@@ -66,7 +66,19 @@ ul {
 
 h2 {
   font-size: 2em;
-  font-weight: 200;}
+  font-weight: 200;
+  line-height: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+  font-weight: 500;
+  line-height: 1.4em;
+}
+
+h4 {
+  font-weight: 200;
+}
 
 section {
   display: flex;
@@ -255,8 +267,9 @@ footer img:hover {
     margin-right: 15vw;
   }
 
-  h2 {
-    white-space: nowrap;
+
+  .text-wrapper h2 {
+    width: 13em;
   }
 
   .skills-ul-wrapper h3 {
@@ -320,9 +333,9 @@ footer img:hover {
 
   .content-wrapper h3 {
     color: black;
-    font-weight: 700;
     font-size: 1em;
     white-space: wrap;
+    font-weight: lighter;
   }
 
   .title-wrapper {
@@ -341,7 +354,9 @@ footer img:hover {
   }
 
   .image-wrappers{
+    display: flex;
     max-width: 52vw;
+    margin-right: 3em;
   }
 
   .swapper {
@@ -429,6 +444,27 @@ footer img:hover {
 
   i{
     margin: 0 0.5em;
+  }
+
+  .next {
+    margin-left: 35vw;
+    margin-right: 10vw;
+    width: 20em;
+  }
+
+  .next a {
+    color: black;
+  }
+
+  .next span {
+    color: black;
+    font-size: 0.8em;
+  }
+  
+  .next h4 {
+    font-size: 1.8em;
+    font-weight: lighter;
+    margin-top: 1em;
   }
 }
 
