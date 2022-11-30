@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KNMI</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <title>About me</title>
 </head>
-<body>
-    
+
+<body class="portfolio-item">
+  <header>
+    <h1><a href="index.html">June</a></h1>
+
+    <section class="top-nav">
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+
+      <ul class="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT ME</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+      </ul>
+    </section>
+  </header>
+
+  <main id="flex" class="portfolio-item">
+    <div class="swapper">
+      <div id="a" class="text-wrapper">
+        <h2>Lockdown air pollution</h2>
+        <p>In the beginning of Covid-19 pandemic, every country in the 
+            world took strong measures to contain the virus. Because 
+            car- and air-traffic were reduced by a lot the air was a 
+            lot cleaner as a result. Because of these measures, the 
+            KNMI wanted to develop a interactive and insightful tool 
+            for politicians and other people, so people can understand 
+            how collective behaviour can greatly reduce air pollution. 
+            The reduction in air pollution is easy to measure with the 
+            Dutch TROPOMI satellite, that the KNMI is supervising. The 
+            satellite has been measuring the world on air pollution 
+            since 2018 from space. From a provisional analysis of the 
+            lockdown, the cities in South-Europe and Paris were 60% 
+            cleaner compared to the years before the pandemic. Of 
+            course, not every city had the same effect, because not 
+            every place had the same measurements.
+        </p>
+      </div>
+      <section id="b">
+        <img src="img/knmi-4x3.png" alt="">
+      </section>
+
+    </div>
+    <section id="c">
+        <div class="text-wrapper">
+            <h3>How do we design a data visualisation for policy <br> makers and the general public?</h3>
+            <p>Our initial idea is to collect data regarding Covid-19 
+                infections and measurements during a certain time frame. 
+                After getting enough data and information, we started 
+                brainstorming and sketching different ideas. 
+                The table to the right is a collection of all the data we 
+                have collected
+            </p>
+            
+        </div>
+      </section>
+      <section>
+        <div class="image-wrappers">
+            <img src="img/data-table2.png" alt="">
+        </div>
+      </section>
+
+  </main>
+
+  <footer>
+        <span>junxiaowastaken@gmail.com</span>
+        <div>
+          <a href="https://www.linkedin.com/in/chun-hui-xiao/"><img src="img/linkedin.png" alt=""></a>
+          <a href="https://www.instagram.com/chnhx/"><img src="img/instagram.png" alt=""></a>
+        </div>
+  </footer>
+
 </body>
+<script src="script.js"></script>
+
 </html>
