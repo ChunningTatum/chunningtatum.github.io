@@ -65,8 +65,8 @@ ul {
 }
 
 h2 {
-  font-size: 2.1em;
-}
+  font-size: 2em;
+  font-weight: 200;}
 
 section {
   display: flex;
@@ -220,7 +220,6 @@ footer img:hover {
 
 .content-wrapper span {
   color: rgba(0, 0, 0, 0.70);
-  ;
   margin-right: 1em;
   font-size: 0.8em;
   font-weight: 300;
@@ -248,7 +247,7 @@ footer img:hover {
   .text-wrapper {
     margin-left: 25vh;
     font-weight: 100;
-    width: 40vw;
+    width: 32em;
     margin-right: 10em;
   }
 
@@ -294,6 +293,10 @@ footer img:hover {
   .portfolio img {
     width: 100%;
     margin: 0;
+  }
+
+  .portfolio-item img:hover {
+    cursor: default;
   }
 
   .section-wrapper {
@@ -401,6 +404,32 @@ footer img:hover {
     min-width: 52vw;
     max-width: 52vw;
   }
+
+  .scroll {
+    display: flex;
+    align-items: center;
+    bottom: 6.2em;
+    right: 5.2vw;
+    position: fixed;
+    font-size: 0.9em;
+    color: #999;
+  }
+
+  .arrow {
+    border: solid #999;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  i{
+    margin: 0 0.5em;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -410,9 +439,19 @@ footer img:hover {
     align-items: center;
   }
 
+  .portfolio-item h3 {
+    max-width: 80%;
+    line-height: 1.5em;
+  }
+
+  .portfolio-item p {
+    max-width: 80%;
+  }
+
   .portfolio section {
     display: flex;
     flex-direction: column;
+    margin-top: 2em;
   }
 
   .text-wrapper {
@@ -480,9 +519,16 @@ footer img:hover {
     margin-top: 5em;
   }
 
-  .portfolio h2 {
+  .text-wrapper h2 {
     font-size: 2em;
     font-weight: 200;
+  }
+  
+  .text-wrapper p {
+    font-size: 0.9em;
+    line-height: 1.9em;
+    font-weight: 500;
+    color: rgb(107, 107, 107);
   }
 
   .title-wrapper {
@@ -561,6 +607,10 @@ footer img:hover {
     font-weight: 700;
     font-size: 1em;
   }
+
+  .scroll {
+    display: none;
+  }
 }
 
   @media (max-width: 769) {
@@ -629,6 +679,14 @@ footer img:hover {
       height: 100%;
       color: black;
       background-color: #FFFFFF;
+    }
+
+    .portfolio-item p{
+      max-width: 100%;
+    }
+
+    .portfolio-item h3{
+      max-width: 100%;
     }
 
     a:link,
