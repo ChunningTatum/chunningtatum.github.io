@@ -494,6 +494,11 @@ footer img:hover {
     min-width: 0;
   }
 
+  iframe {
+    align-self: center;
+    min-width: 25vw;
+    height: 30vh;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -722,6 +727,16 @@ footer img:hover {
   .next:visited {
     color: black;
   }
+
+  iframe {
+    width: 70vw;
+    height: 40vw;
+  }
+
+  .frame-sec {
+    margin-bottom: 3em;
+  }
+  
 }
 
   @media (max-width: 769) {
