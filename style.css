@@ -257,7 +257,7 @@ footer img:hover {
   }
 
   .text-wrapper {
-    margin-left: 25vh;
+    margin-left: 30vh;
     font-weight: 100;
     width: 32em;
     margin-right: 10em;
@@ -401,8 +401,24 @@ footer img:hover {
   section img {
     max-width: 25vw;
     min-width: 20vw;
+    max-height: 60vh;
     margin-right: 3em;
     cursor: pointer;
+  }
+
+  .section-with-image img {
+    max-width: 40vw;
+  }
+
+  #c ul{
+    display: flex;
+    flex-direction: column;
+    color: rgb(117, 117, 117);
+    font-size: 0.9em;
+    line-height: 2.5em;
+    list-style: circle;
+    margin-block-start: 0;
+    padding-inline-start: 1.3em;
   }
 
   footer {
@@ -447,12 +463,12 @@ footer img:hover {
   }
 
   .next {
-    margin-left: 35vw;
+    margin-left: 25vw;
     margin-right: 10vw;
     width: 20em;
   }
 
-  .next a {
+  .next{
     color: black;
   }
 
@@ -466,6 +482,18 @@ footer img:hover {
     font-weight: lighter;
     margin-top: 1em;
   }
+
+  .links-to {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #gif1 {
+    max-width: 30vw;
+    min-width: 0;
+  }
+
 }
 
 @media (max-width: 1023px) {
@@ -539,6 +567,12 @@ footer img:hover {
   .portfolio-item #c {
     margin-left: 0;
     max-width: 100%;
+  }
+
+  .section-with-image {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
   }
 
   .text-wrapper h3 {
@@ -651,6 +685,43 @@ footer img:hover {
   .scroll {
     display: none;
   }
+
+  .text-wrapper ul {
+    display: flex;
+    flex-direction: column;
+    color: rgb(117, 117, 117);
+    font-size: 0.9em;
+    line-height: 2.5em;
+    list-style: circle;
+    margin-block-start: 0;
+    padding-inline-start: 1.3em;
+  }
+
+  .section-with-gif {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .links-to {
+    display: flex;
+    justify-content: space-around;
+    margin-left:20vw;
+    margin-right:20vw;
+    margin-bottom: 10em;
+  }
+
+  .links-to h4{
+    font-size:1.3em;    
+  }
+
+  .next {
+    color: black;
+  }
+
+  .next:visited {
+    color: black;
+  }
 }
 
   @media (max-width: 769) {
@@ -673,6 +744,10 @@ footer img:hover {
     .text-wrapper h2 {
       font-size: 1.5em;
       margin-bottom: 0em;
+    }
+    .section-with-image {
+      display: flex;
+      flex-direction: column;
     }
 
   }
