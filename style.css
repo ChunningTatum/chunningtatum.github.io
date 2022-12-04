@@ -495,11 +495,9 @@ footer img:hover {
   }
 
   iframe {
-    width: 10vw;
-    height: 50vh;
+    width: 25vw;
+    height: 65vh;
   }
-
-  width="428" height="926"
 
   .section-with-image{
     transition: transform 0.25s ease;
