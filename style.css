@@ -237,6 +237,24 @@ footer img:hover {
   font-weight: 300;
 }
 
+video {
+  width: 40vw;
+  height: 50vh;
+}
+
+#sfw-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#sfw-section img {
+  max-width: 20vw;
+}
+
+#sfw-section:hover {
+  transform: scale(1.2);
+}
+
 @media (min-width: 1024px) {
   main {
     /* padding-top: 12vh;
@@ -504,7 +522,7 @@ footer img:hover {
   }
 
   .section-with-image:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 
@@ -742,6 +760,15 @@ footer img:hover {
 
   .frame-sec {
     margin-bottom: 3em;
+  }
+
+  #sfw {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sfw img {
+    max-width: 50vw;
   }
   
 }
