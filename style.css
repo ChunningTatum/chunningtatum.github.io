@@ -39,6 +39,10 @@ a {
   color: #999;
 }
 
+strong{
+  font-weight: 1000;
+  color: rgb(61, 61, 61);
+}
 /*                for homepage                      */
 
 /* add 50 vw to the home left*/
@@ -513,7 +517,7 @@ video {
   }
 
   iframe {
-    width: 25vw;
+    width: 40vw;
     height: 65vh;
   }
 
