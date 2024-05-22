@@ -24,11 +24,11 @@ body {
     color: white;
   }
 
-  video {
-    width: 100vw;
-    height: 50vh;
-    object-fit: cover;
-    position: absolute;
+  .video{
+    width: 100vw !important;
+    height: 50vh !important;
+    object-fit: cover !important;
+    position: absolute !important;
     z-index: -100;
     top: 0px;
   }
@@ -40,6 +40,10 @@ body {
     max-width: 80vw;
     margin-top: 8em;    
     margin-bottom: 8em;
+  }
+
+  #section-template a{
+    color: blue;
   }
 
   #section-template ul {
@@ -78,6 +82,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 10em;
   }
 
   .image-wrapper img:nth-child(2) {
@@ -248,7 +253,7 @@ body {
     margin-top: 0px;
   
     transform: rotate(45deg);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
   }
   
   #menu-toggle:checked+.menu-button-container .menu-button {
@@ -258,7 +263,7 @@ body {
   #menu-toggle:checked+.menu-button-container .menu-button::after {
     margin-top: 0px;
     transform: rotate(-45deg);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
   }
   
   .content-wrapper span {
@@ -279,6 +284,14 @@ body {
   
   #sfw-section:hover {
     transform: scale(1.2);
+  }
+
+  .image-showcase {
+    background-color: #e7e7e74d;
+  }
+
+  .image-showcase img{
+    max-width: 60vw;
   }
   
   @media (min-width: 1024px) {
@@ -363,7 +376,7 @@ body {
       justify-content: space-between;
     }
   
-    section img {
+    .section-with-image img {
       max-width: 25vw;
       min-width: 20vw;
       max-height: 60vh;
@@ -437,6 +450,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      margin-top: 5em;
     }
   
     #gif1 {
@@ -483,8 +497,17 @@ body {
     .image-support img:hover,
     .image-wrapper img:hover{ 
       transform: scale(1.1);
-        -webkit-box-shadow: 0px 47px 43px -15px rgba(0, 0, 0, 0.31)
+        -webkit-box-shadow: 0px 47px 43px -15px rgba(0, 0, 0, 0.31);
     }
+
+    .section-with-image img, 
+    #descriptive img, 
+    .image-support img,
+    .image-wrapper img {
+      transform: scale(1);
+      transition: 0.2s ease-in-out;
+    }
+    
 
   }
   
@@ -645,11 +668,7 @@ body {
     }
   
     .links-to {
-      display: flex;
-      justify-content: space-around;
-      margin-left:20vw;
-      margin-right:20vw;
-      margin-bottom: 10em;
+      margin-top: 10em;
     }
   
     .links-to h4{
