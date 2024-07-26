@@ -26,7 +26,7 @@ a {
 }
 
 .video {
-  width: 100vw !important;
+  width: 100% !important;
   height: 50vh !important;
   object-fit: cover !important;
   position: absolute !important;
@@ -293,6 +293,44 @@ footer img:hover {
 
 .image-showcase img {
   max-width: 60vw;
+}
+
+.compare-container {
+  margin-bottom: 50em;
+}
+
+.img-comp-container {
+  position: relative;
+  display: flex;
+  margin-left: -20vw;
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+}
+
+.img-comp-img img {
+  display:block;
+  vertical-align:middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 40px;
+  height: 40px;
+  background-color: #2196F3;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+.img-comp-container img {
+  width: 300px;
 }
 
 @media (min-width: 1024px) {
@@ -876,6 +914,19 @@ footer img:hover {
   footer {
     display: none;
   }
+
+  body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
 
 }
 

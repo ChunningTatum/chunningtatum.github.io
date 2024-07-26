@@ -30,12 +30,12 @@
 
     <main>
         <section>
-            <img class="video" src="img/dynniq2.png" alt="">
+            <img class="video" src="img/Dynniq banner.png" alt="">
         </section>
 
         <section id="section-template" class="title-spacer">
             <article>
-                <h2>Dynniq Energy</h2>
+                <h2>Project OPCIS</h2>
             </article>
             <article id="descriptive">
                 <ul>
@@ -49,6 +49,9 @@
                         <p><strong>Task:</strong> Research, design, prototyping, devOps</p>
                     </li>
                 </ul>
+                <p>Re-design the 'OPCIS' product in a more modern look and feel that focusses
+                    on mobile and user interaction first.
+                </p>
                 <p>Dynniq Energy focuses on improving energy supplies. This includes
                     the distribution of cables and pipelines to neighborhoods and
                     households, as well as the engineering and construction of
@@ -56,21 +59,25 @@
                     in enhancing the electricity grid to achieve a low-carbon energy
                     economy. Major customers include network operators such as Liander,
                     Stedin, and TenneT. Since 2019, Dynniq Energy B.V. has been operating
-                    independently in the Dutch energy market. As I have signed an NDA, I 
-                    can't disclose a lot.</p>
+                    independently in the Dutch energy market. Note: I signed a NDA, I am not
+                    able to show a lot of things here.</p>
             </article>
         </section>
 
         <section id="section-template">
             <article>
-                <h2>OPCIS</h2>
+                <h2>About OPCIS</h2>
             </article>
             <article id="descriptive">
                 <p>OPCIS is a business management system that can communicate with
                     <a href="https://wiki.dsplatform.nl/index.php/Hoofdpagina" target="_blank">DSP</a>,
-                    where all the energy grid operators communicate with. My role at OPCIS
-                    was to prepare and implement the redesign for the Heijmans acquisition
-                    and simultaneously improve the platform's user experience and provide
+                    where all the energy grid operators communicate with. As an example, when 
+                    OPCIS receives a task  from Liander, it generates a work order, which is 
+                    then assigned to a mechanic. Since the application is built on an old 
+                    framework (Java JSF v8), it was more efficient to address the mechanic 
+                    flow first, ensuring that changes wouldn't impact other components of OPCIS. 
+                    My role at the OPCIS team was to prepare and implement the redesign for the Heijmans 
+                    acquisition and simultaneously improve the platform's user experience and provide
                     support as a DevOps engineer.
                 </p>
             </article>
@@ -81,21 +88,38 @@
                 <h2>Mobile first</h2>
             </article>
             <article id="descriptive">
-                <p>As an example, when OPCIS receives a task from Liander, it generates 
-                    a work order, which is then assigned to a mechanic. Since the application 
-                    is built on an old framework (Java JSF v8), it was more efficient to 
-                    address the mechanic flow first, ensuring that changes wouldn't impact 
-                    other components of OPCIS.
+                <p>
                 </p>
             </article>
         </section>
 
-        <section class="image-showcase">
-            <img src="img/dynniq3.png" alt="">
+        <section class="compare-container">
+            <div class="img-comp-container">
+                <div class="img-comp-img">
+                    <img src="img/heijmans-login.png ">
+                </div>
+                <div class="img-comp-img img-comp-overlay">
+                    <img src="img/dynniq-login.png">
+                </div>
+            </div>
         </section>
 
 
+        <!-- <section id="section-template">
+            <article>
+                <h2>Mobile first</h2>
+            </article>
+            <article id="descriptive">
+                <p>As an example, when OPCIS receives a task from Liander, it generates
+                    a work order, which is then assigned to a mechanic. Since the application
+                    is built on an old framework (Java JSF v8), it was more efficient to
+                    address the mechanic flow first, ensuring that changes wouldn't impact
+                    other components of OPCIS.
+                </p>
+            </article>
+        </section> -->
     </main>
 </body>
+<script src="compare.js"></script>
 
 </html>
