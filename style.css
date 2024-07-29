@@ -278,15 +278,15 @@ video {
 
   .menu a {
     position: relative;
-    text-decoration: none; 
+    text-decoration: none;
     color: inherit;
     padding: 0 10px;
   }
-  
+
   .menu a:hover {
     color: #000 !important;
   }
-  
+
   .menu a:before {
     content: "";
     position: absolute;
@@ -297,27 +297,35 @@ video {
     transform-origin: right;
     transition: transform 0.3s ease-in-out;
   }
-  
+
   .menu a:hover:before {
     transform: scaleX(1);
     transform-origin: left;
   }
-  
+
   .menu {
-    list-style: none; 
+    list-style: none;
     padding: 0;
-    display: flex; 
+    display: flex;
   }
-  
+
   .menu li {
-    margin-right: 20px; 
+    margin-right: 20px;
   }
-  
+
   .menu ul:hover a:hover~a:before {
     translate: -100% 0;
     transition: .2s .2s, scale 0s .4s;
   }
-  
+
+  .content-wrapper {
+    margin: 0 1em;
+  }
+
+  .section-wrapper {
+    margin: 0 18vw;
+  }
+
 }
 
 
@@ -365,15 +373,18 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-top: 5vh;
-  margin: 0 18vw;
+}
+
+.portfolio h2 {
+  margin-top: 0em;
+  margin-bottom: 1em;
+  width: 100%;
 }
 
 .heading-wrapper {
   display: flex;
   align-items: center;
   width: 100%;
-  margin-left: 6vw;
 }
 
 .portfolio img {
@@ -398,10 +409,6 @@ p {
 
 main a:hover {
   border: none;
-}
-
-.content-wrapper {
-  margin: 0 0.5rem;
 }
 
 .content-wrapper h3 {
@@ -587,6 +594,15 @@ iframe {
     align-items: center;
   }
 
+  .portfolio img {
+    max-width: none;
+  }
+
+  .home section img {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
   .portfolio-item h3 {
     max-width: 80%;
     line-height: 1.5em;
@@ -692,10 +708,6 @@ iframe {
     margin-bottom: 1em;
   }
 
-  .home h2 {
-    margin-bottom: 4em;
-  }
-
   .about h2 {
     margin-top: 0em;
   }
@@ -751,10 +763,6 @@ iframe {
 
   .title-wrapper h2 {
     margin-bottom: 2em;
-  }
-
-  .content-wrapper {
-    margin-bottom: 5em;
   }
 
   .content-wrapper a:visited {
@@ -855,6 +863,25 @@ iframe {
 
 /* hamburger menu */
 @media (max-width: 571px) {
+  .home section img {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .home h2 {
+    max-width: 100%;
+    margin-bottom: 0;
+    margin-top: 3em;
+  }
+
+  .text-wrapper {
+    width: 90%;
+  }
+
+  .text-wrapper p {
+    margin-bottom: 5em;
+  }
+
   .menu-button-container {
     display: flex;
   }
