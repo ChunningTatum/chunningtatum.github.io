@@ -97,7 +97,6 @@ a {
 
 a:hover {
   color: black;
-  border-bottom: 2px solid black;
 }
 
 header a {
@@ -336,6 +335,37 @@ footer img:hover {
   width: 300px;
 }
 
+.about_me {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 8em;
+}
+
+.about_me img {
+  width: 25em;
+}
+
+.about_me h2 {
+  margin-top: 0;
+}
+
+.about_me article {
+  margin-right: 5em;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 20vw;
+}
+
+.about-skills ul{
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 1024px) {
   .menu a {
     position: relative;
