@@ -291,10 +291,6 @@ footer img:hover {
   padding: 10em 0;
 }
 
-.image-showcase img {
-  max-width: 60vw;
-}
-
 .compare-container {
   margin-bottom: 50em;
   display: flex;
@@ -367,6 +363,10 @@ footer img:hover {
   flex-direction: column;
 }
 @media (min-width: 1024px) {
+  .image-showcase img {
+    max-width: 60vw;
+  }
+  
   .menu a {
     position: relative;
     text-decoration: none; 
@@ -967,7 +967,7 @@ footer img:hover {
   }
 
   img {
-    width: 90vw;
+    width: 95vw;
   }
 
   footer {
